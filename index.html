@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>username</span><input type="text" name="username" id="username"><br>
+        <span>password</span><input type="text" name="password" id="password"><br>
+        <button id="login">login</button>
+    </div>
+    <script>
+    const button = document.getElementById('login');
+button.addEventListener('click', function onClick(e) {
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+
+    const usernameNode = username.value;
+    const passwordNode = password.value;
+    console.log(usernameNode, passwordNode);
+})
+   
+
+
+
+
+
+    </script>
+</body>
+</html>
